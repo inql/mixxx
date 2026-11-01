@@ -22,6 +22,7 @@
 #include "effects/backends/builtin/echoeffect.h"
 #include "effects/backends/builtin/lowcutechoeffect.h"
 #include "effects/backends/builtin/glitcheffect.h"
+#include "effects/backends/builtin/rolleffect.h"
 #include "effects/backends/builtin/loudnesscontoureffect.h"
 #include "effects/backends/builtin/metronomeeffect.h"
 #include "effects/backends/builtin/phasereffect.h"
@@ -65,6 +66,7 @@ BuiltInBackend::BuiltInBackend() {
 #endif
     registerEffect<DistortionEffect>();
     registerEffect<GlitchEffect>();
+    registerEffect<RollEffect>();
     registerEffect<CompressorEffect>();
 }
 
